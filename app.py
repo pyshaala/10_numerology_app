@@ -6,9 +6,9 @@ import streamlit as st
 import pandas as pd
 import re
 import datetime
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
-from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.lib.pagesizes import A4
+# from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
+# from reportlab.lib.styles import getSampleStyleSheet
+# from reportlab.lib.pagesizes import A4
 import os
 import time
 import streamlit.components.v1 as components
@@ -262,17 +262,17 @@ def suggest_name_correction(name, target):
 
 # --------------------------- PDF EXPORT ---------------------------
 
-def generate_pdf(report_text, filename):
-    doc = SimpleDocTemplate(filename, pagesize=A4)
-    styles = getSampleStyleSheet()
-    story = []
+# def generate_pdf(report_text, filename):
+#     doc = SimpleDocTemplate(filename, pagesize=A4)
+#     styles = getSampleStyleSheet()
+#     story = []
 
-    for line in report_text.split("\n"):
-        story.append(Paragraph(line, styles["Normal"]))
-        story.append(Spacer(1, 10))
+#     for line in report_text.split("\n"):
+#         story.append(Paragraph(line, styles["Normal"]))
+#         story.append(Spacer(1, 10))
 
-    story.append(PageBreak())
-    doc.build(story)
+#     story.append(PageBreak())
+#     doc.build(story)
 
 # --------------------------- STORAGE ---------------------------
 
@@ -509,11 +509,11 @@ if submit:
 
     # --------------------------- PDF EXPORT ---------------------------
 
-    pdf_file = "numerology_report.pdf"
-    generate_pdf(report_text, pdf_file)
+    # pdf_file = "numerology_report.pdf"
+    # generate_pdf(report_text, pdf_file)
 
-    with open(pdf_file, "rb") as f:
-        st.download_button("📄 Download PDF Report", f, file_name=pdf_file)
+    # with open(pdf_file, "rb") as f:
+    #     st.download_button("📄 Download PDF Report", f, file_name=pdf_file)
         
 
     # --------------------------- SAVE HISTORY ---------------------------
