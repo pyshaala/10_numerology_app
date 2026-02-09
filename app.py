@@ -313,6 +313,7 @@ with st.form("user_form"):
     )
 
     # save_data = st.checkbox("Can we save your data in our database?", value=True)
+    st.write("FYI 👉 We Don't Store Any Data.")
 
     submit = st.form_submit_button("Generate Report")
 
@@ -626,3 +627,4 @@ st.markdown(
     unsafe_allow_html=True
 
 )
+
