@@ -312,7 +312,7 @@ with st.form("user_form"):
         max_value=2100
     )
 
-    save_data = st.checkbox("Can we save your data in our database?", value=True)
+    # save_data = st.checkbox("Can we save your data in our database?", value=True)
 
     submit = st.form_submit_button("Generate Report")
 
@@ -517,7 +517,7 @@ if submit:
         
 
     # --------------------------- SAVE HISTORY ---------------------------
-    save_data = True
+    save_data = False
     if save_data:
         data = {
             "Name": name,
@@ -624,4 +624,5 @@ show_footer()
 st.markdown(
     "<div style='margin-bottom:70px;'></div>",
     unsafe_allow_html=True
+
 )
