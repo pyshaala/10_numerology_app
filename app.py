@@ -295,7 +295,7 @@ st.markdown("---")
 # Inputs
 with st.form("user_form"):
 
-    name = st.text_input("Full Name (as per documents)")
+    name = st.text_input("Name (as per documents)")
 
     dob = st.date_input(
         "Date of Birth",
@@ -474,6 +474,10 @@ if submit:
     st.markdown("---")
 
     st.info("Disclaimer:This app is for self-reflection and educational purposes. It does not guarantee future outcomes.")
+    st.markdown("---")
+    
+    st.info("Thank You! Please Do subscribe our YouTube Channel." )
+    st.markdown(" <a href="https://youtube.com/@pyshaala">https://youtubeoutube/@Pyshaala</a> ", unsafe_allow_html=True)
 
     # --------------------------- TEXT REPORT ---------------------------
 
@@ -627,4 +631,5 @@ st.markdown(
     unsafe_allow_html=True
 
 )
+
 
