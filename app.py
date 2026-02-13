@@ -477,7 +477,7 @@ if submit:
     st.markdown("---")
     
     st.info("Thank You! Please Do subscribe our YouTube Channel." )
-    st.markdown(" <a href="https://youtube.com/@pyshaala">https://youtubeoutube/@Pyshaala</a> ", unsafe_allow_html=True)
+    st.markdown('<a href="https://youtube.com/@pyshaala">https://youtubeoutube/@Pyshaala</a>', unsafe_allow_html=True)
 
     # --------------------------- TEXT REPORT ---------------------------
 
@@ -631,5 +631,6 @@ st.markdown(
     unsafe_allow_html=True
 
 )
+
 
 
